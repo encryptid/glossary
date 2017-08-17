@@ -1,1 +1,1 @@
-##A glossary module for a roofing website.
+## A glossary module for a roofing website.
