@@ -1,0 +1,72 @@
+/* Include Foundation! */
+
+//@import '../node_modules/foundation-sites/scss/foundation';
+
+//@include foundation-global-styles;
+//@include foundation-grid;
+
+body {
+    background-color: rgb(0, 113, 206);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        list-style:none;
+    }
+}
+
+header {
+
+    nav {
+        background-color: white;
+        color: rgb(140,142,144);
+        
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                margin: 2vw;
+            }
+        }
+    }
+}
+
+main {
+    display: flex;
+
+    div {
+        margin: auto;
+    }
+}
+
+footer {
+    display: flex;
+    width: 80vw;
+    background-color: white;
+    color: black;
+
+
+    .contact-info {
+        width: 50vw;
+    }
+
+    .form {
+        width: 50vw;
+
+        #name {
+            display: flex;
+            input {
+                width: 250px;
+            }
+        }
+        input {
+            width: auto;
+        }
+        button {
+            display: block;
+        }
+    }
+}
