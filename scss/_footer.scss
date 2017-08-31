@@ -1,0 +1,66 @@
+footer {
+    background-color: white;
+    color: black;
+    font-size: .7em;
+    
+    section {
+        display: flex;
+        width: 80vw;
+
+    .contact-info {
+        width: 50vw;
+        margin-right: 3vw;
+    }
+
+    form {
+        width: 50vw;
+        background-color: #F8F8F8;
+
+        input {
+            width: 500px;
+        }
+        
+        p {
+            margin: 0;
+            font-size: .7em;
+        }
+
+        span {
+            color: red;
+        }
+
+        fieldset {
+            border: none;
+            margin: 1vh;
+            margin-left: 0;
+            padding-left: 0;
+
+        .names {
+            display: flex;
+
+            #name:first-child {
+                margin-right: .5vw;
+            }
+            input {
+                width: 244px;
+            }
+        }
+    }
+
+    #comments {
+        textarea {
+            height: 100px;
+            width: 500px;
+            //text-align: top;
+        }
+    }
+        button {
+            display: block;
+            background-color: #353535;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+        }
+    }
+}
+}

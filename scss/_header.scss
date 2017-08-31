@@ -1,0 +1,34 @@
+header {
+    
+        h1 {
+            font-weight: normal;
+            font-size: 10vh;
+            margin: 1vh;
+        }
+    
+        nav {
+            background-color: white;
+            color: rgb(140,142,144);
+            
+            ul {
+                margin-bottom: 0;
+                display: flex;
+                //justify-content: center;
+    
+                li {
+                    margin: 0;
+    
+                    figure {
+                        margin: 1vw;
+                        img {
+                            width: 75px;
+                            height: 75px;
+                        }
+                        figcaption {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
