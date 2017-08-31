@@ -14,19 +14,43 @@
         <h1>Glossary</h1>
         <nav>
             <ul>
-                <li>login</li>
-                <li>home</li>
-                <li>account</li>
-                <li>orders</li>
-                <li>settings</li>
-                <li>glossary</li>
+                <li>
+                    <figure><img src="/images/login.svg">
+                        <figcaption>login</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="/images/home.svg">
+                        <figcaption>home</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="/images/account.svg">
+                        <figcaption>account</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="/images/orders2.svg">
+                        <figcaption>orders</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="/images/settings.svg">
+                        <figcaption>settings</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><img src="/images/glossary.svg">
+                        <figcaption>glossary</figcaption>
+                    </figure>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <div class="roof-pic">
-            <img src="http://via.placeholder.com/600x600">
+            <img id="sky" src="/images/roof-diagram-skylight.png">
         </div>
         <div class="gcarousel">
             <img src="http://via.placeholder.com/300x600">
@@ -56,26 +80,34 @@
                     <p>Charlotte, Fort Mill, Waxhaw, Mooresville, Weddington, Marvin, Concord, Matthews, Indian Land, Pineville</p>
                 </li>
         </div>
-        <div class="form">
-            <p>Name</p>
-            <div id="name">
-                <div id="first">
-                    <input type="text" name="fname">
-                    <p>First name</p>
+        <form>
+            <fieldset>
+                <legend>Name</legend>
+                <div class="names">
+                    <div id="name">
+                        <input type="text" name="fname">
+                        <p>First name</p>
+                    </div>
+                    <div id="name">
+                        <input type="text" name="lname">
+                        <p>Last name</p>
+                    </div>
                 </div>
-                <div id="last">
-                    <input type="text" name="lname">
-                    <p>Last name</p>
-                </div>
-            </div>
-            <p>Email<span>*</span></p>
-            <input type="text" name="email">
-            <p>Phone Number<span>*</span></p>
-            <input type="text" name="pnum">
-            <p>Comments<span>*</span></p>
-            <input type="text" name="comments">
+            </fieldset>
+            <fieldset>
+                <legend>Email<span>*</span></legend>
+                <input type="text" name="email">
+            </fieldset>
+            <fieldset>
+                <legend>Phone Number<span>*</span></legend>
+                <input type="text" name="pnum">
+            </fieldset>
+            <fieldset id="comments">
+                <legend>Comments<span>*</span></legend>
+                <input type="text" name="comments">
+            </fieldset>
             <button>Submit</button>
-        </div>
+        </form>
     </footer>
 
 </body>

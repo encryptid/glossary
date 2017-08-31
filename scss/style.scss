@@ -5,12 +5,16 @@
 //@include foundation-global-styles;
 //@include foundation-grid;
 
+$lightblue: #73B7E6;
+$darkblue: #006FCD;
+
 body {
     background-color: rgb(0, 113, 206);
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
+    background: linear-gradient(to right, $lightblue, $darkblue);
     
     li {
         list-style:none;
@@ -19,16 +23,33 @@ body {
 
 header {
 
+    h1 {
+        font-weight: normal;
+        font-size: 10vh;
+    }
+
     nav {
         background-color: white;
         color: rgb(140,142,144);
         
         ul {
+            margin-bottom: 0;
             display: flex;
-            justify-content: center;
+            //justify-content: center;
 
             li {
-                margin: 2vw;
+                margin: 0;
+
+                figure {
+                    margin: 1vw;
+                    img {
+                        width: 75px;
+                        height: 75px;
+                    }
+                    figcaption {
+                        text-align: center;
+                    }
+                }
             }
         }
     }
@@ -36,9 +57,18 @@ header {
 
 main {
     display: flex;
+    background-image: url('/images/synthetic-roofing-crop.jpg');
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
 
     div {
         margin: auto;
+
+        #sky {
+            width: 600px;
+            border-radius: 10px;
+            box-shadow: -5px 5px 20px black;
+        }
     }
 }
 
@@ -47,26 +77,53 @@ footer {
     width: 80vw;
     background-color: white;
     color: black;
-
+    font-size: .7em;
 
     .contact-info {
         width: 50vw;
+        margin-right: 3vw;
     }
 
-    .form {
+    form {
         width: 50vw;
 
-        #name {
+        input {
+            width: 500px;
+        }
+        
+        p {
+            margin: 0;
+            font-size: .7em;
+        }
+
+        fieldset {
+            border: none;
+            margin: 1vh;
+
+        .names {
             display: flex;
+
+            #name:first-child {
+                margin-right: .5vw;
+            }
             input {
-                width: 250px;
+                width: 244px;
             }
         }
+    }
+
+    #comments {
         input {
-            width: auto;
+            height: 100px;
+            text-align: left;
         }
+    }
         button {
             display: block;
+            background-color: #353535;
+            color: white;
+            border: none;
+            padding: 10px 15px;
         }
     }
 }
