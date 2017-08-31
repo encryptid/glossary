@@ -24,9 +24,30 @@ header {
                             width: 75px;
                             height: 75px;
                         }
+                        // img:hover {
+                        //     background-color: $lightblue;
+                        //     border-radius: 10px;
+                        // }
                         figcaption {
                             text-align: center;
                         }
+                    }
+                }
+                li:hover {
+                    //width: 65px;
+                    //margin: 5px;
+                    background-color: $lightblue;
+                    border-radius: 10px;
+                    border: 1px solid gray;
+                    text-align: center;
+
+                    img {
+                        width: 65px;
+                        //margin: 5px;
+                    }
+
+                    figcaption {
+                        font-size: .65em;
                     }
                 }
             }
