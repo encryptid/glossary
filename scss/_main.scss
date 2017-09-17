@@ -5,13 +5,47 @@ main {
     background-repeat: no-repeat;
     height: 600px;
 
+    .hidden {
+        display: none;
+    }
+
+    map {
+        border: 2px solid purple;
+    }
+
+    area {
+        border: 2px solid red;
+        width: 100px;
+    }
+
     div {
         margin: auto;
 
-        #sky {
+        #base {
             width: 600px;
             border-radius: 10px;
             box-shadow: -5px 5px 20px black;
+        }
+
+        #bubble {
+            position: absolute;
+            width: 325px;
+            height: 175px;
+            top: 360px;
+            left: 200px;
+        }
+
+        .sky-select {
+            display: inline-block;
+            position: absolute;
+            height: 25px;
+            width: 15px;
+            transform: skew(-30deg);
+            border: 2px solid red;
+            //opacity: .7;
+            margin: 0;
+            top: 479px;
+            left: 473px;
         }
     }
 
@@ -23,9 +57,18 @@ main {
         border: 5px solid $darkblue;
         border-radius: 10px;
         box-shadow: -5px 5px 20px black;
-        text-align: center;
-        font-size: 1.7em;
-        font-weight: bold;
+        font-size: 7.5vh;
         text-shadow: -1px 1px 5px black;
+        overflow-y: scroll;
+
+        p {
+            margin: .7vh;
+            padding-left: 2vw;
+            border-radius: 10px;
+        }
+
+        p:hover {
+            background-color: $darkblue;
+        }
     }
 }
